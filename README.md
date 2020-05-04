@@ -1,8 +1,6 @@
 # Folder2Form
 Folder2Form - Create a Google Form with pics and valorations from a Google Drive Folder with images
 
-
-/**
  * Create a Google Form with pictures to valorate from a ID folder from drive.
  * FOLDER:
  *  - ID is part of the Drive folder URL.
@@ -14,4 +12,3 @@ Folder2Form - Create a Google Form with pics and valorations from a Google Drive
  *  - You can change Form properties and configuration later
  *
  * @author hiperfifo@gmail.com 20200504
- */

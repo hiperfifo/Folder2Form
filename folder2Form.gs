@@ -16,11 +16,11 @@ function createFormFromFolder() {
   /*
    * Create form
    */
-  var form = FormApp.create("CONCURSO DE FOTOGRAFÍA")
-  form.setDescription("Formulario creado con un script" + "\n" 
-                      + "Sigue las instrucciones facilitadas y pulsa siguiente para empezar." + "\n" 
-                      + "No olvides llegar hasta la opción final \'Enviar\' para que se guarden los cambios." + "\n"
-                      + "Muchas gracias por participar.");
+  var form = FormApp.create("PHOTO CONTEST")
+  form.setDescription("Form created by Folder2Form script https://github.com/hiperfifo/Folder2Form" + "\n" 
+                      + "Follow given instructions and press next to start." + "\n" 
+                      + "Don't forget to go final button \'Send\' to save all changes." + "\n"
+                      + "Thank you for your participation.");
   form.addPageBreakItem();
   /* 
    * Get files
@@ -30,8 +30,7 @@ function createFormFromFolder() {
   var contents = folder.getFiles();
   /*
    * For each file, create a image type question
-   * Para cada fichero, crear una pregunta tipo imagen. 
-   * Ahora mismo solo se puede una imagen y luego la pregunta
+   * Now it's only possible to create an imageItem with and scaleItem
    */
   while (contents.hasNext()) {
     file = contents.next();
@@ -65,11 +64,13 @@ function createFormFromFolder() {
   form.setRequireLogin(true);
   form.setShowLinkToRespondAgain(true);
   form.setProgressBar(true);
-  //random cuestions solo si se arregla el poner imagen a un scaleitem
+  //random questions just if we can use a scaleItem with an image
   form.setShuffleQuestions(false);
-  //fin
+  //end
   Logger.log("created form with " + form.getItems().length + " questions.");
   file = null;
   contents = null;
   folder = null;
+  form = null;
+  drivefolder = null;
 }

@@ -1,6 +1,6 @@
 # Folder2Form
 Folder2Form - Create a Google Form with pics and valorations from a Google Drive Folder with images
-Usufull for photo contest for education or anyother use
+Usefull for photo contest for education or anyother use
 
  Create a Google Form with pictures to valorate from a ID folder from Google Drive.
  
@@ -11,8 +11,8 @@ Usufull for photo contest for education or anyother use
  FORM:
   - Questions are scale type from 1 to 10, "I like it nothing", "I like it the most"
   - Questions are separated by pagebreak to load one picture each time
-  - Form is quiz type, one awnser per user, user can edit and shows progess
-  - You can change Form properties and configuration later
+  - Form is quiz type, one awnser per user, user can edit and shows progress bar
+  - You can change questions properties and form configuration later
  
  @author hiperfifo@gmail.com 20200504
  
